@@ -9,6 +9,7 @@ a{
 }
 
 body{
+  height: 100vh;
   font-family: "Montserrat", sans-serif;
   color:#000000;
   font-size:larger;
@@ -88,7 +89,7 @@ body{
   font-weight: 700;
   color: black;
   height: 80px;
-  background-color: #E1F4F3;
+  background-color: beige;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -115,9 +116,16 @@ body{
 .footer {
   border: solid;
   color: #fff;
-  padding: 20px 0;
+  padding: 5px 0;
+  font-size: medium;
 /*   position: fixed; */
   bottom: 0;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Style for social media icons */
@@ -127,7 +135,7 @@ body{
   color: #fff;
 }
 .header {
-  border: 1px solid #000;
+  border:none;
   text-align: center;
   padding: 20px;
 }
@@ -138,17 +146,20 @@ body{
 }
 
 .navbar {
-  background-color: #E1F4F3;
+  background-color: beige;
+  border: 15px solid white;
+    border-radius: 40px;
 }
 
 .card {
   margin-top: 20px;
-  border: 1px solid #000;
+  border: 2px solid gray;
+  border-radius: 40px;
   padding: 20px;
 }
 
 .con{
-  background-color: #E1F4F3;
+  background-color: beige;
   margin-bottom: 0;
   margin-top: 8px;
   bottom: 0; /* Adjust this value as needed */
@@ -165,6 +176,10 @@ body{
 
 .cd .navbar-nav .nav-item{
   cursor: pointer;
+}
+
+td{
+  border-right: 1px solid #dee2e6;
 }
 
 h3,h2{
