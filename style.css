@@ -55,7 +55,7 @@ body{
   width: 100%;
 }
 .content {
-  width: 50%;
+  width: 60%;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ body{
   color: black;
   height: 80px;
   background-color: beige;
-  width: 100%;
+  width: 120%;
   display: flex;
   justify-content: center;
   align-items: center;
