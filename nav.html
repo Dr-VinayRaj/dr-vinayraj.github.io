@@ -1,11 +1,22 @@
-<style>.navbar {
+<style>
+      .navbar {
       background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    }
+
+    .navbar-nav {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .navbar-nav .nav-item {
+      flex: 0 0 auto;
     }
 
     .navbar .nav-link {
       color: #fff !important;
       font-weight: 500;
-      margin: 0 5px;
+      margin: 0 6px;
       padding: 0.75rem 1rem;
       border-radius: 10px;
       transition: background-color 0.3s, transform 0.2s;
@@ -20,17 +31,29 @@
       background-color: #fff;
       color: #4e54c8 !important;
       font-weight: bold;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
+      xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.7%29' 
+      stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 
+      15h22M4 23h22'/%3E%3C/svg%3E");
     }
 </style>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand d-lg-none" href="./professional.html">Home</a>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white d-lg-none" href="./index.html">Menu</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse cd" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="./professional.html">Professional</a></li>
@@ -46,6 +69,8 @@
     </div>
   </div>
 </nav>
+
+<!-- Active Tab Highlight Script -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const currentPage = window.location.pathname.split("/").pop();
@@ -59,3 +84,4 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
