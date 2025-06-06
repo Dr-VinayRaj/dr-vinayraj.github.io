@@ -59,18 +59,12 @@
     z-index: 1030;
   }
 </style>
-<div class="header" style="width: 100%; overflow: hidden; border: 1px solid #ccc; position: relative; height: 40px;">
-  <div style="position: absolute; animation: bounceText 6s ease-in-out infinite alternate;">
-    Dr. Vinay Raj
-  </div>
+<div class="header" style="width: 100%; overflow: hidden; border: 1px solid #ccc;">
+  <marquee behavior="alternate" direction="right" scrollamount="5" style="width: 100%;">
+    Dr. Vinay Raj  
+  </marquee>
 </div>
 
-<style>
-@keyframes bounceText {
-  0% { left: 0; }
-  100% { left: calc(100% - 150px); } /* Adjust based on text width */
-}
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
