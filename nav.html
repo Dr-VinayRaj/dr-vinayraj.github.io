@@ -92,14 +92,17 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
     document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
-      const linkPage = link.getAttribute("href").split("/").pop();
-      if (linkPage === currentPage) {
+      const linkHref = link.getAttribute("href").split("/").pop();
+      if (linkHref === currentPage) {
+        document.querySelectorAll(".navbar-nav .nav-link").forEach(l => l.classList.remove("active")); // Remove existing
         link.classList.add("active");
       }
     });
   });
 </script>
+
 
 <!-- Bootstrap Dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
