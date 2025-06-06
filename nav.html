@@ -1,57 +1,53 @@
 <style>
-        .navbar-nav .nav-item {
+  .navbar {
+    background-color: orange;
+  }
+
+  .navbar-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .navbar-nav .nav-item {
+    flex: 0 0 auto;
     text-align: center;
     white-space: nowrap;
-}
-.navbar-nav .nav-link {
-    padding: 0.75rem 0.5rem;
-}
-      .navbar {
-      background: linear-gradient(90deg, #4e54c8, #8f94fb);
-    }
+  }
 
-    .navbar-nav {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
+  .navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    margin: 0 6px;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
 
-    .navbar-nav .nav-item {
-      flex: 0 0 auto;
-    }
+  .navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
 
-    .navbar .nav-link {
-      color: #fff !important;
-      font-weight: 500;
-      margin: 0 6px;
-      padding: 0.75rem 1rem;
-      border-radius: 10px;
-      transition: background-color 0.3s, transform 0.2s;
-    }
+  .navbar .nav-link.active {
+    background-color: #ffffff;
+    color: orange !important;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
-    .navbar .nav-link:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-      transform: scale(1.05);
-    }
+  .navbar-toggler {
+    border: none;
+  }
 
-    .navbar .nav-link.active {
-      background-color: #fff;
-      color: #4e54c8 !important;
-      font-weight: bold;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .navbar-toggler {
-      border: none;
-    }
-
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
       xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.7%29' 
       stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 
       15h22M4 23h22'/%3E%3C/svg%3E");
-    }
+  }
 </style>
+
 
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
